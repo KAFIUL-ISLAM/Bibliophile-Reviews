@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ActiveLink from '../ActiveLink/ActiveLink';
 
 const Header = () => {
 
@@ -12,22 +13,22 @@ const Header = () => {
                     <div className="flex items-center justify-between h-20">
                         <div className=" flex items-center">
                             <Link className="flex-shrink-0" to="/">
-                                <img className="" src='/logo.png' alt="B-Reviews" />
+                                <img src='/logo.png' alt="B-Reviews" />
                             </Link>
                             <div className="hidden md:block">
                                 <div className="ml-10 flex items-baseline space-x-4">
-                                    <Link className="text-gray-400  hover:text-pink-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium" to="/">
+                                    <ActiveLink className="text-gray-400  hover:text-pink-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium" to="/">
                                         Home
-                                    </Link>
-                                    <Link className="text-gray-400 dark:text-white  hover:text-pink-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium" to="/reviews">
+                                    </ActiveLink>
+                                    <ActiveLink className="text-gray-400 dark:text-white  hover:text-pink-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium" to="/reviews">
                                         Reviews
-                                    </Link>
-                                    <Link className="text-gray-400  hover:text-pink-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium" to="/dashboard">
+                                    </ActiveLink>
+                                    <ActiveLink className="text-gray-400  hover:text-pink-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium" to="/dashboard">
                                         Dashboard
-                                    </Link>
-                                    <Link className="text-gray-400  hover:text-pink-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium" to="/blogs">
+                                    </ActiveLink>
+                                    <ActiveLink className="text-gray-400  hover:text-pink-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium" to="/blogs">
                                         Blogs
-                                    </Link>
+                                    </ActiveLink>
                                 </div>
                             </div>
                         </div>
@@ -58,18 +59,18 @@ const Header = () => {
                 {
                     open && <div className="md:hidden">
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                            <Link className="text-gray-400 hover:text-pink-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/">
+                            <ActiveLink className="text-gray-400 hover:text-pink-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/">
                                 Home
-                            </Link>
-                            <Link className="text-gray-400 dark:text-white hover:text-pink-800 block px-3 py-2 rounded-md text-base font-medium" to="/reviews">
+                            </ActiveLink>
+                            <ActiveLink className="text-gray-400 dark:text-white hover:text-pink-800 block px-3 py-2 rounded-md text-base font-medium" to="/reviews">
                                 Reviews
-                            </Link>
-                            <Link className="text-gray-400 hover:text-pink-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/dashboard">
+                            </ActiveLink>
+                            <ActiveLink className="text-gray-400 hover:text-pink-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/dashboard">
                                 Dashboard
-                            </Link>
-                            <Link className="text-gray-400 hover:text-pink-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/blogs">
+                            </ActiveLink>
+                            <ActiveLink className="text-gray-400 hover:text-pink-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/blogs">
                                 Blogs
-                            </Link>
+                            </ActiveLink>
                         </div>
                     </div>
                 }
