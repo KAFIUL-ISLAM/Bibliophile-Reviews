@@ -7,9 +7,11 @@ const Reviews = () => {
     return (
         <div>
             <h1>This is reviews</h1>
-            {
-                reviews.map(review => <Review key={review.id} review={review}></Review>)
-            }
+            <div className='mx-16'>
+                {
+                    reviews.map(review => <Review key={review.id} review={review}></Review>)
+                }
+            </div>
         </div>
     );
 };
