@@ -15,8 +15,8 @@ const Home = () => {
                     <img className='rounded' src="/book.png" alt="The Alchemist-Paulo Coelho" />
                 </div>
                 <div className=''>
-                    <h1 className='text-6xl font-bold mb-8' style={{ color: '#FF5A31'}}>This is the Title</h1>
-                    <p className='text-lg font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ut rem commodi, quo nobis omnis, praesentium quae quis consectetur cupiditate id doloribus eveniet. Aliquam alias consequuntur iusto omnis aspernatur nesciunt.</p>
+                    <h1 className='text-6xl font-bold mb-8' style={{ color: '#FF5A31'}}>The Best-Selling Book of All-Time</h1>
+                    <p className='text-lg text-slate-900 font-semibold'>Paulo Coelho's enchanting novel has inspired a devoted following around the world. This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago, who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids...</p>
                     <button target="_blank" className='mt-10 text-white font-medium px-8 py-4 rounded-md' style={{ backgroundColor: '#FF5A31' }}>Buy Now</button>
                 </div>
             </div>
@@ -28,7 +28,7 @@ const Home = () => {
                    } 
                 </div>
             </div>
-            <button onClick={()=> navigate('/reviews')} className='bg-rose-600 text-white font-medium px-8 py-4 rounded-md'> See All Reviews</button>
+            <button onClick={() => navigate('/reviews')} className='text-white font-medium px-8 py-4 rounded-md' style={{ backgroundColor: '#FF5A31' }}> See All Reviews</button>
         </div>
     );
 };
